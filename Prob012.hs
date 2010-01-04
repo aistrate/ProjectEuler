@@ -1,4 +1,4 @@
-module Prob012 (allFactors, combinations) where
+module Prob012 (allFactors, combinations, allCombinations, makeUnique) where
 
 import Data.List (sort, group, (\\), find)
 import Data.Maybe (fromJust)
