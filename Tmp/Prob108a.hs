@@ -10,15 +10,6 @@ solutions :: Integer -> [(Integer, Integer)]
 solutions n = [ (x, y) | x <- [n+1..2*n], (n * x) `mod` (x - n) == 0, 
                                           let y = (n * x) `div` (x - n) ]
 
-
-primes = [1, 2, 3, 5, 7, 11]
-  -- [2, 3, 5, 7, 11, 13, 17, 19, 23]
-
-solutions2 ps = (product (map (\n -> 2*n + 1) ps) + 1) `div` 2
-
---allMultiples 1 ps = map (:[]) ps
---allMultiples n ps = 
-
 result = head . dropWhile ((<= 1000) . snd) 
          $ map (\n -> (n, length (solutions n))) [12,24..]
 
