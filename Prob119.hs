@@ -1,29 +1,18 @@
 import Data.Char (ord)
+import Data.List (sort)
 import TestHelper
 
-
-sorted ls = let minH = minimum $ map head ls
-                newLs = map (\l -> if head l == minH then tail l else l) ls
-            in minH : sorted newLs
-
-powers = map (\n -> map (^n) [2..]) [2..20]
 
 sumDigits :: Integer -> Integer
 sumDigits n = sum . map (\c -> fromIntegral(ord c - ord '0')) $ show n
 
-logInt :: Integer -> Integer -> Integer
-logInt b n = truncate $ logBase (fromIntegral b) (fromIntegral n)
+hasProperty (n, b, _) = n > 10 && sumDigits n == b
 
-baseExp n = let b = sumDigits n
-                e = logInt b n
-            in (b, e)
+powers = [ (n, b, e) | b <- [2..200], e <- [1..20], let n = b^e ]
 
-hasProperty n = let (b, e) = baseExp n
-                in b^e == n
-
-propertyNums = dropWhile (< 10) . filter hasProperty $ sorted powers
+propertyNums = sort . filter hasProperty $ powers
 
 
-main = let n = last . take 30 $ propertyNums
-           (b, e) = baseExp n
-       in printTime $ print (n, b, e)
+main = printTime . print . last . take 30 $ propertyNums
+-- (248155780267521,63,8)
+-- Time: 0.218750 sec.
