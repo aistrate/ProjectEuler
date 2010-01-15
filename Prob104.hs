@@ -1,27 +1,22 @@
 import Data.List (sort)
+import TestHelper
 
 
-fibonacciNums = 1 : 1 : zipWith (+) fibonacciNums (tail fibonacciNums)
+fibonacci = (1, 1) : (1, 1) : zipWith add fibonacci (tail fibonacci)
+  where add (a, a') (b, b') = (a + b, (a' + b') `mod` 1000000000)
 
-lastNineDigits :: Integer -> String
---lastNineDigits n = show $ n `mod` 1000000000
-lastNineDigits = reverse . take 9 . reverse . show
+firstNineDigits (n, n') = take 9 $ show n
+lastNineDigits (n, n') = show n'
 
-firstNineDigits :: Integer -> String
-firstNineDigits = take 9 . show
+isPandigital = (['1'..'9'] ==) . sort
 
-isPandigital :: String -> Bool
-isPandigital = ("123456789" ==) . sort
+isDoublePandigital :: (Integer, Integer) -> Bool
+isDoublePandigital n = (isPandigital $ lastNineDigits n) &&
+                       (isPandigital $ firstNineDigits n)
 
 
-result = head . filter (isDoublePandigital . snd) $ zip [1..] fibonacciNums
-         where isDoublePandigital n = (isPandigital $ firstNineDigits n) &&
-                                      (isPandigital $ lastNineDigits n)
-
---main = print result
-
-main = print . fst . head . filter (isDoublePandigital . snd) $ zip [1..] fibonacciNums
-       where isDoublePandigital n = let s = show n
-                                        firstNine = take 9 s
-                                        lastNine = reverse . take 9 . reverse $ s
-                                    in isPandigital firstNine && isPandigital lastNine
+main = printTime . print . fst . head . filter (isDoublePandigital . snd)
+       $ zip [1..] fibonacci
+-- 329468
+-- Time: 4.906250 sec.
+-- (compiled)
