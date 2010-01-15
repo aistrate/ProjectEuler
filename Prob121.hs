@@ -1,6 +1,6 @@
 import Data.Ratio
 import Data.List ((\\))
-import TestHelper
+import Timer
 import Prob012 (combinations)
 
 

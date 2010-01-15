@@ -1,7 +1,7 @@
 import Control.Arrow (arr, first)
 import Data.List (minimumBy)
 import Data.Char (ord)
-import TestHelper
+import Timer
 
 
 sorted ext ls = let (minHs, ls') = extractMins ls

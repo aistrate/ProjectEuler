@@ -1,5 +1,6 @@
 import Data.List (sort)
-import TestHelper
+import Timer
+
 
 isBouncy :: Integer -> Bool
 isBouncy n = let r = show n

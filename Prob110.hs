@@ -1,5 +1,5 @@
 import Prob108
-import TestHelper
+import Timer
 
 
 main = printTime . print $ minSolutions 4000000

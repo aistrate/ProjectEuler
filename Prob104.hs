@@ -1,5 +1,5 @@
 import Data.List (sort)
-import TestHelper
+import Timer
 
 
 fibonacci = (1, 1) : (1, 1) : zipWith add fibonacci (tail fibonacci)
@@ -18,5 +18,5 @@ isDoublePandigital n = (isPandigital $ lastNineDigits n) &&
 main = printTime . print . fst . head . filter (isDoublePandigital . snd)
        $ zip [1..] fibonacci
 -- 329468
--- Time: 4.906250 sec.
+-- Time: 4.656250 sec.
 -- (compiled)

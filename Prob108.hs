@@ -10,7 +10,7 @@
 module Prob108 (minSolutions) where
 
 import Data.List (minimumBy)
-import TestHelper
+import Timer
 
 
 solutions :: [Int] -> Int

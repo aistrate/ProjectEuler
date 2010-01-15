@@ -1,6 +1,3 @@
-import TestHelper
-
-
 data Dart = Miss | S Int | D Int | T Int
           deriving (Eq, Show)
 

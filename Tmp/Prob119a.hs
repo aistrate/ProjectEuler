@@ -1,5 +1,5 @@
 import Data.Char (ord)
-import TestHelper
+import Timer
 
 
 sorted ls = let minH = minimum $ map head ls

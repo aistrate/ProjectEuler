@@ -1,5 +1,5 @@
 import Prob003 (primeNumbers)
-import TestHelper
+import Timer
 
 
 calcS :: [Integer] -> Int -> Integer

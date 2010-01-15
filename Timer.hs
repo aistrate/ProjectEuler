@@ -1,4 +1,4 @@
-module TestHelper (printTime) where
+module Timer (printTime) where
 
 import System.Time
 import Text.Printf

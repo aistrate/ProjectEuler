@@ -3,7 +3,7 @@
 -- y(x - n) = nx
 -- y = nx / (x - n)
 
-import TestHelper
+import Timer
 
 
 solutions :: Integer -> [(Integer, Integer)]

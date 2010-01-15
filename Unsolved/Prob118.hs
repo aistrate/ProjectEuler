@@ -1,6 +1,6 @@
 import Data.Char (ord)
 import Data.List (nub)
-import TestHelper
+import Timer
 import Prob003
 
 

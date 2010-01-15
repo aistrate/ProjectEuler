@@ -1,4 +1,4 @@
-import TestHelper
+import Timer
 
 
 remainder a n = ((a - 1)^n + (a + 1)^n) `mod` (a^2)

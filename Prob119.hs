@@ -1,6 +1,6 @@
 import Data.Char (ord)
 import Data.List (sort)
-import TestHelper
+import Timer
 
 
 sumDigits :: Integer -> Integer
