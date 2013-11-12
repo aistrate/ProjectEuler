@@ -16,6 +16,7 @@ findPandigitals m n ps = map (splitPerm m n) $ filter (isPandigital m n) ps
 allPandigitals = findPandigitals 1 4 perms ++ findPandigitals 2 3 perms
                  where perms = permutations [1..9]
 
-result = sum . nub $ map prod allPandigitals
+main = print $
+       sum . nub $ map prod allPandigitals
          where prod (_, _, c) = c
 -- 45228

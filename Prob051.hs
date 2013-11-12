@@ -47,8 +47,6 @@ allFamilies ns = sortBy compFamilies families
           compFamilies f g = compare (head f) (head g)
 
 
-result = allFamilies primesList
+main = print $
+       allFamilies primesList
 -- [[121313,222323,323333,424343,525353,626363,828383,929393]]
-
-
-main = print result

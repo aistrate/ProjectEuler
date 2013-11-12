@@ -17,6 +17,7 @@ firstRatioUnder r = head $ filter ((< r) . primesRatio) (tail spiralCounts)
 -- (13120,5248,52481)
 
 
-result = let (n, _, _) = firstRatioUnder (1 % 10)
-         in 2*n + 1
+main = print $
+       let (n, _, _) = firstRatioUnder (1 % 10)
+       in 2*n + 1
 -- 26241

@@ -11,5 +11,6 @@ hasLongerNumerator r = numDigits (numerator r) > numDigits (denominator r)
     where numDigits n = length (digitList n)
 
 
-result = length . filter hasLongerNumerator $ take 1001 expansions
+main = print $
+       length . filter hasLongerNumerator $ take 1001 expansions
 -- 153

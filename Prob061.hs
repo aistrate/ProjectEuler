@@ -38,6 +38,7 @@ result0 = map head . group $ map sort allCycles
 -- [[1281,2512,2882,5625,8128,8256]]
 
 
-result = sum . head . concat . map cycles $ permutations numbers
--- [8128,2882,8256,5625,2512,1281]
+main = print $
+       sum . head . concat . map cycles $ permutations numbers
 -- 28684
+-- [8128,2882,8256,5625,2512,1281]

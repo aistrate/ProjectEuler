@@ -13,5 +13,6 @@ doublePalindromes n = filter isDoublePalindrome [1..n]
 --  53835,73737,585585]
 
 
-result = sum $ doublePalindromes 1000000
+main = print $
+       sum $ doublePalindromes 1000000
 -- 872187

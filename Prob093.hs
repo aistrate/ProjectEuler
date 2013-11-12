@@ -87,13 +87,13 @@ longestChain (x:y:ys) | x + 1 == y = 1 + longestChain (y:ys)
 list2Int :: [Int] -> Int
 list2Int = read . map intToDigit
 
-result = let candidates = map (\varSet -> (list2Int varSet, longestChain $ calculateAll varSet)) fourVarSets
-         in sort . head . reverse
-                 . groupBy (\c d -> (snd c) == (snd d))
-                 . sortBy (\c d -> compare (snd c) (snd d)) 
-                 $ candidates
+
+main = print $
+       let candidates = map (\varSet -> (list2Int varSet, longestChain $ calculateAll varSet))
+                            fourVarSets
+       in sort . head . reverse .
+          groupBy (\c d -> (snd c) == (snd d)) .
+          sortBy (\c d -> compare (snd c) (snd d)) $
+          candidates
 -- [(1258,51)]      (25 sec.)
-
-
-main = print result
 -- (compiled: < 3 sec.)

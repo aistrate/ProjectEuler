@@ -14,5 +14,6 @@ findConsecutive len dpfCnt = head $ filter goodGroup consecutiveDpfCounts
 -- [(134043,4),(134044,4),(134045,4),(134046,4)]
 
 
-result = fst . head $ findConsecutive 4 4
+main = print $
+       fst . head $ findConsecutive 4 4
 -- 134043

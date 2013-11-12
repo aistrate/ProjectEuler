@@ -18,7 +18,9 @@ maxPrize n = let p = totalProbability n
              in (denominator p) `div` (numerator p)
 
 
-main = printTime . print $ maxPrize 15
+main = printTime $
+       print $
+       maxPrize 15
 -- 2269
 -- Time: 16.953125 sec.
 -- (compiled)

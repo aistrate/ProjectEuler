@@ -31,5 +31,6 @@ formula n = (2^n * product [ (2*k - 1) | k <- [2..n] ])
                 `div` product [2..n]
 formulas n = map formula [2..n]
 
-result = formula 20
+main = print $
+       formula 20
 -- 137846528820

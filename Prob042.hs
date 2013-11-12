@@ -20,8 +20,8 @@ main = do
        let result = process inpStr
        print result
        hClose inh
+-- 162
 
 
 process inp = length $ filter isTriangleWord words
     where words = read $ "[" ++ inp ++ "]"
--- 162

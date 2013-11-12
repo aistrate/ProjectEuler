@@ -22,6 +22,8 @@ first9DigitProd n = head $ dropWhile (< 100000000) prods
 pandigitals = [ pan | pan <- [9..9999], isPandigital (first9DigitProd pan) ]
 
 
-result = last . sort $ map first9DigitProd pandigitals
--- map (\p -> (p, first9DigitProd p)) pandigitals
+main = print $
+       last . sort $ map first9DigitProd pandigitals
 -- 932718654
+
+-- map (\p -> (p, first9DigitProd p)) pandigitals

@@ -34,10 +34,11 @@ allPaths levels start nextIxs = allPaths' levels start
                                         (nextIxs ! ix)
 
 
-result = maximum $ map value paths
+main = print $
+       maximum $ map value paths
          where paths = allPaths 15 (1, 1) (nextIndices triangleArray)
                value path = sum $ map (triangleArray !) path
-
 -- 1074
+
 
 -- start from the bottom of the triangle!

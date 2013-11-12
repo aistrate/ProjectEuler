@@ -15,6 +15,7 @@ moduloPower n k m = moduloPower' 1 k
                                in seq acc' (seq p' (moduloPower' acc' p'))
 
 
-result = let m = 10 ^ 10
-         in (28433 * (moduloPower 2 7830457 m) + 1) `mod` m
+main = print $
+       let m = 10 ^ 10
+       in (28433 * (moduloPower 2 7830457 m) + 1) `mod` m
 -- 8739992577   (32 sec)

@@ -40,7 +40,9 @@ periodContFrac = length . snd . continuedFrac
 
 nonSquares n = [1..n] \\ (map (^2) [1..(truncRoot n)])
 
-result = length . filter odd . map periodContFrac $ nonSquares 10000
+
+main = print $
+       length . filter odd . map periodContFrac $ nonSquares 10000
 -- 1322
 
 

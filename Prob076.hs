@@ -1,4 +1,4 @@
-module Prob076 (decomps) where
+module Prob076 (main, decomps) where
 
 
 decomps :: Int -> [[Int]]
@@ -10,5 +10,6 @@ decomps n = decomps' n (n - 1)
                        decomps' d (t-1)
 
 
-main = print . length $ decomps 100
+main = print $
+       length $ decomps 100
 -- Compiled: 190569291      (2 min.)

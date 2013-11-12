@@ -18,5 +18,6 @@ checkouts = [ (a, b, c) | a <- allDarts, b <- sameOrAfter a, c <- doubles ]
 scoreCheckout (a, b, c) = score a + score b + score c
 
 
-result = length . filter (< 100) $ map scoreCheckout checkouts
+main = print $
+       length . filter (< 100) $ map scoreCheckout checkouts
 -- 38182

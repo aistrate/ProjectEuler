@@ -21,8 +21,9 @@ permCubes = reverse . sortByLength . longGroups
     where longGroups = (filterByLength 2) . permGroupings . cubes
 
 
-result = minimum . map head $ filterByLength (length . head $ pc) pc
-    where pc = permCubes 10000
+main = print $
+       minimum . map head $ filterByLength (length . head $ pc) pc
+         where pc = permCubes 10000
 -- 127035954683
 
 

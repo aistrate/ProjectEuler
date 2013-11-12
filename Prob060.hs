@@ -36,8 +36,7 @@ primeConcatLists n = combine (primeConcatLists (n - 1)) primesList
 --  [11,239,1091,1847], [23,311,677,827], [23,677,827,1871]]
 
 
-result = minimum . map sum $ primeConcatLists 5
-
-main = print $ primeConcatLists 5
--- Compiled (< 1 min.): [[13,5197,5701,6733,8389]]
+main = print $
+       minimum . map sum $ primeConcatLists 5
 -- 26033
+-- Compiled (< 1 min.): [[13,5197,5701,6733,8389]]

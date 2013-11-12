@@ -45,5 +45,6 @@ chainLengthOpt n = chainLengthOpt' 0 [] (chain n)
 chainStarts = filter ((==60) . snd) . map (\k -> (k, chainLengthOpt k)) $
                    [1..1000000]
 
-result = length chainStarts
+main = print $
+       length chainStarts
 -- 402

@@ -40,6 +40,7 @@ dateToDayOfWeek d = case dateToInt d `mod` 7 of
                         5 -> Sat
                         6 -> Sun
 
-result = length . filter (== Sun) . map dateToDayOfWeek 
-            $ [ Date 1 m y | y <- [1901..2000], m <- [1..12] ]
+main = print $
+       length . filter (== Sun) . map dateToDayOfWeek $
+       [ Date 1 m y | y <- [1901..2000], m <- [1..12] ]
 -- 171

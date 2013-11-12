@@ -20,6 +20,7 @@ makeMapWith formula = M.fromList $ takeWhile ((<= maxLimit) . fst)
 isPentaHexa n = isPentagonal n && isHexagonal n
 
 
-result = head $ filter isPentaHexa $ takeWhile (<= maxLimit) 
-                                   $ dropWhile (<= 40755) triangleList
+main = print $
+       head $ filter isPentaHexa $ takeWhile (<= maxLimit) $
+       dropWhile (<= 40755) triangleList
 -- 1533776805

@@ -6,5 +6,6 @@ fact n = fact' n 1
                fact' n a = fact' (n - 1) (a * n)
 
 
-result = sum . map digitToInt . show $ fact 100
+main = print $
+       sum . map digitToInt . show $ fact 100
 -- 648

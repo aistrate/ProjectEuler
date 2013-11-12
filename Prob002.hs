@@ -5,8 +5,6 @@ fibonacci p a b s | p b       = fibonacci p b (a + b) (addIfEven b s)
                            then n + sm
                            else sm
 
-result = fibonacci (< 4000000) 1 1 0
-
-
-
+main = print $
+       fibonacci (< 4000000) 1 1 0
 -- 4613732

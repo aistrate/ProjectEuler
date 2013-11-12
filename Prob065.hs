@@ -31,5 +31,6 @@ testEFrac = take 10 $ partialValues eFrac
 
 convergent k frac = last . take k $ partialValues frac
 
-result = sum . digitList . numerator $ convergent 100 eFrac
+main = print $
+       sum . digitList . numerator $ convergent 100 eFrac
 -- 272

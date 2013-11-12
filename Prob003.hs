@@ -26,7 +26,6 @@ primeNumbers = 2 : [ n | n <- [3, 5..],
           a `lessThanSqrtOf` b  = a * a <= b
 
 
-result = maximum (primeFactors 600851475143)
--- [71,839,1471,6857]
-
--- main = print $ primeFactors 600851475147
+main = print $
+       maximum (primeFactors 600851475143)
+-- 6857

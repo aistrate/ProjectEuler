@@ -19,6 +19,7 @@ nextSmallerPrime k = fromIntegral . last
                         $ takeWhile (< (fromIntegral k)) primeNumbers
 
 
-result = head . dropWhile ((<= 5000) . snd) 
-            $ map (\n -> (n, length $ primeDecomps n)) [4..]
+main = print $
+       head . dropWhile ((<= 5000) . snd) $
+       map (\n -> (n, length $ primeDecomps n)) [4..]
 -- (71,5006)

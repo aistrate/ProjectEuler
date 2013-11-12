@@ -8,5 +8,6 @@ powerSums limit = map head . group $ sort sumsThruA
           sumsThruC a b = takeWhile (<= limit) [ a^2 + b^3 + c^4 | c <- primeNumbers ]
 
 
-result = length $ powerSums (50000000 - 1)
+main = print $
+       length $ powerSums (50000000 - 1)
 -- 1097343      (1139575 before eliminating duplicates)

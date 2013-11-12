@@ -1,6 +1,5 @@
 import Data.Char (ord)
 import Data.List (sort)
-import Timer
 
 
 sumDigits :: Integer -> Integer
@@ -13,6 +12,6 @@ powers = [ (n, b, e) | b <- [2..200], e <- [1..20], let n = b^e ]
 propertyNums = sort . filter hasProperty $ powers
 
 
-main = printTime . print . last . take 30 $ propertyNums
+main = print $
+       last . take 30 $ propertyNums
 -- (248155780267521,63,8)
--- Time: 0.218750 sec.

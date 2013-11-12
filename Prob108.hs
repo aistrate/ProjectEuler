@@ -7,10 +7,9 @@
 -- if n = d1^p1 * d2^p2 * ... dk^pk (where d1, d2, ..., dk are primes),
 -- then n has (2*p1 + 1) * (2*p2 + 1) * ... * (2*pk + 1) divisors
 
-module Prob108 (minSolutions) where
+module Prob108 (main, minSolutions) where
 
 import Data.List (minimumBy)
-import Timer
 
 
 solutions :: [Int] -> Int
@@ -38,5 +37,6 @@ minSolutions n = let cs = map (\ps -> (powers2num ps, solutions ps))
                  in minimumBy (\a b -> compare (fst a) (fst b)) cs
 
 
-main = printTime . print $ minSolutions 1000
+main = print $
+       minSolutions 1000
 -- (180180,1013)

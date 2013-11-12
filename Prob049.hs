@@ -23,14 +23,14 @@ areDigitPerms (a, b, c) = digits a == digits b && digits a == digits c
     where digits = sort . digitList
 
 
-result = (read::String -> Integer) . concatTriplet . head . tail 
-            $ filter areDigitPerms primeSequences
-    where concatTriplet (a, b, c) = show a ++ show b ++ show c
--- [(1487,4817,8147),(2969,6299,9629)]
+main = print $
+       (read::String -> Integer) . concatTriplet . head . tail $
+       filter areDigitPerms primeSequences
+         where concatTriplet (a, b, c) = show a ++ show b ++ show c
 -- 296962999629
+-- [(1487,4817,8147),(2969,6299,9629)]
 
 
-main = print result
 -- Compiled for limits 10000 to 99999:
 {-
 [(11483,14813,18143),(11497,41719,71941),(12713,13217,13721),

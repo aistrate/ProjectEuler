@@ -42,5 +42,6 @@ letters n | n > 100 && n < 1000 && n `mod` 100 /= 0 =
 
 letters 1000 = "onethousand"
 
-result = length . concat $ map letters [1..1000]
+main = print $
+       length . concat $ map letters [1..1000]
 -- 21124

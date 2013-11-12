@@ -6,7 +6,8 @@ digitalSum = sum . digitList
 numbers = [ a ^ b | a <- [1..100], b <- [1..100] ]
 
 
-result = maximum $ map digitalSum numbers
+main = print $
+       maximum $ map digitalSum numbers
 -- 972
 
 

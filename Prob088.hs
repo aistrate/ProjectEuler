@@ -35,6 +35,7 @@ allMinimals :: Int -> [Int]
 allMinimals n = map head . group . sort . map snd $ minimalProdSums n
 
 
-main = print . sum $ allMinimals 12000
+main = print $
+       sum $ allMinimals 12000
 -- Compiled (< 4 sec.):
 -- 7587457

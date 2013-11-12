@@ -1,4 +1,4 @@
-module Prob012 (allFactors, combinations, allCombinations, makeUnique) where
+module Prob012 (main, allFactors, combinations, allCombinations, makeUnique) where
 
 import Data.List (sort, group, (\\), find)
 import Data.Maybe (fromJust)
@@ -25,9 +25,8 @@ makeUnique = map head . group . sort
 
 result = fromJust $ find ((> 500) . length . allFactors) triangles
 
-main = do let n = result
-          print n
-          print (length $ allFactors n)
+main = do print result
+          print (length $ allFactors result)
 -- compiled:
 -- 76576500
 -- 576 factors

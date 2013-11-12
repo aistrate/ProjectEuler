@@ -1,4 +1,4 @@
-import Char (digitToInt)
+import Data.Char (digitToInt)
  
 
 digits = map digitToInt . show
@@ -10,5 +10,6 @@ chain = iterate next
 chainEnd = head . dropWhile (\n -> n /= 1 && n /= 89) . chain
 
 
-main = print . length . filter (== 89) $ map chainEnd [1..10000000]
+main = print $
+       length . filter (== 89) $ map chainEnd [1..10000000]
 -- 8581146 (compiled: 52 sec.)

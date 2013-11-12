@@ -9,6 +9,8 @@ main = do
        let result = process lines
        print result
        hClose inh
+-- 376
+
 
 readAllLines :: Handle -> IO [String]
 readAllLines inh = 
@@ -23,7 +25,6 @@ readAllLines inh =
 process lines =
     length . filter (== GT) $ map (compareHands . pairOfHands) lines
     where pairOfHands = splitAt 5 . map card . words
--- 376
 
 
 cardValue v | v `elem` ['2'..'9'] 

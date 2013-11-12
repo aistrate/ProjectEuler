@@ -30,5 +30,6 @@ allQuats arr = concat [quatsPerDir ((1, 1), (17, 17)) (1, 1) arr,
                        quatsPerDir ((1, 1), (17, 20)) (1, 0) arr,
                        quatsPerDir ((1, 1), (20, 17)) (0, 1) arr]
 
-result = maximum $ map product $ allQuats matrix
+main = print $
+       maximum $ map product $ allQuats matrix
 -- 70600674

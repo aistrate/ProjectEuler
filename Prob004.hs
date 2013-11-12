@@ -8,7 +8,8 @@ palindromes = [ z | x <- [999, 998..100], y <- [999, 998..100],
                            in take hlen s == take hlen (reverse s)
 
 
-largestPalindrome = maximum palindromes
+main = print $
+       maximum palindromes
 -- 906609 = 993 * 913
 
 

@@ -18,9 +18,8 @@ solutions (a, bPlusC) = if a >= bPlusC then bPlusC `div` 2
 cubePaths = sum . map solutions . cubePairs
 
 
-result = head . dropWhile ((< 1000000) . snd) $ map (\m -> (m, cubePaths m)) [1..]
--- (1818,1000457)       (with [1800..] instead of [1..] -- 2 sec.)
-
-
-main = print result
+main = print $
+       head . dropWhile ((< 1000000) . snd) $
+       map (\m -> (m, cubePaths m)) [1..]
 -- Compiled (8 sec.)
+-- (1818,1000457)       (with [1800..] instead of [1..] -- 2 sec.)

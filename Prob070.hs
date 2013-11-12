@@ -14,9 +14,8 @@ minPhiPerm n = fst $ foldl1' minPair phiPairs
                       | otherwise      = q
 
 
-result = minPhiPerm 10000000
-
-main = print $ result
+main = print $
+       minPhiPerm 10000000
 -- 8319823  (Compiled - more than 12 min.)
 --      -> 8313928 (1.0007090511248113)
 -- 783169 (less than 1 mil.)

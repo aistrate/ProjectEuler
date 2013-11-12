@@ -17,6 +17,7 @@ takeRange a b = drop (a - 1) . (take b)
 pandigitals = permutations [0..9]
 
 
-result = sum . map makeNr $ filter hasProperty pandigitals
--- [1406357289,1460357289,4106357289,4160357289,1430952867,4130952867]
+main = print $
+       sum . map makeNr $ filter hasProperty pandigitals
 -- 16695334890
+-- [1406357289,1460357289,4106357289,4160357289,1430952867,4130952867]

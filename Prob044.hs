@@ -30,10 +30,8 @@ pentagonalPairs max = [ (j, k) | j <- [1..max], k <- [j+1..max],
 -- pk - pj = 5482660  == pentagonal 1912
 
 
-result = diff . head $ sortBy compPairs (pentagonalPairs (maxLimit `div` 2))
+main = print $
+       diff . head $ sortBy compPairs (pentagonalPairs (maxLimit `div` 2))
          where diff (j, k) = (pentagonals ! k) - (pentagonals ! j)
                compPairs p q = compare (diff p) (diff q)
 -- 5482660
-
-
-main = print result

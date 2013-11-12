@@ -27,6 +27,9 @@ splitByPerimeter sols = reverse $ sortBy compareLength perimGroups
           compareLength g h = compare (length g) (length h)
 
 
-result = head . splitByPerimeter $ solutions 1000
+main = print $
+       head . splitByPerimeter $ solutions 1000
 -- [(840,40,399,401),(840,56,390,394),(840,105,360,375),(840,120,350,370),
 --  (840,140,336,364),(840,168,315,357),(840,210,280,350),(840,240,252,348)]
+
+-- 840

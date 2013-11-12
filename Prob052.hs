@@ -6,5 +6,6 @@ sameDigitMultiples n = (length . group $ map orderedDigits multiples) == 1
           orderedDigits = sort . digitList
 
 
-result = head $ filter sameDigitMultiples [1..]
+main = print $
+       head $ filter sameDigitMultiples [1..]
 -- 142857

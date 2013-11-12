@@ -13,5 +13,6 @@ isLychrel n = isLychrel' (reverseAdd n) 50
 lychrelNumbers = [ n | n <- [1..], isLychrel n ]
 
 
-result = length $ takeWhile (< 10000) lychrelNumbers
+main = print $
+       length $ takeWhile (< 10000) lychrelNumbers
 -- 249

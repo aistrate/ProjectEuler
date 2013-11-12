@@ -1,5 +1,5 @@
 import System.IO
-import Data.Array.Diff
+import Data.Array
 import Data.List (foldl', find, (\\), intersect, nub)
 import Data.Maybe (fromJust)
 import Data.Char (digitToInt)

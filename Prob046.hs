@@ -17,6 +17,7 @@ doubleSquares = map doubleSquare [1..]
 canFindPrime n = any isPrime . map (n -) $ takeWhile (< n) doubleSquares
 
 
-result = head . filter (not . canFindPrime) 
-              $ takeWhile (<= maxLimit) oddComposites
+main = print $
+       head . filter (not . canFindPrime) $
+       takeWhile (<= maxLimit) oddComposites
 -- 5777

@@ -29,11 +29,13 @@ intSqrt :: Integral a => a -> a
 intSqrt = round . sqrt . fromIntegral
 
 
-digitList :: Integral a => a -> [Int]
+digitList :: (Show a, Integral a) => a -> [Int]
 digitList = map (fromIntegral . digitToInt) . show
 
 
-result = sum . map sum . map (flip sqrtDigits 100) $ [1..100] \\ map (^2) [1..10]
+main = print $
+       sum . map sum . map (flip sqrtDigits 100) $
+       [1..100] \\ map (^2) [1..10]
 -- 40886
 
 

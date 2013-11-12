@@ -14,9 +14,9 @@ rMax a = maximum . extractPeriod $ map (remainder a) [1..]
 
 
 main = let rs = map (\n -> (n, rMax n)) $ [3..1000]
-       in printTime $ do print rs
-                         print . sum $ map snd rs
--- ...
+       in printTime $
+          print $
+          sum $ map snd rs
 -- 333082500
 -- Time: 57.953125 sec.
 -- (compiled)

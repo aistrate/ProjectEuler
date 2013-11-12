@@ -1,3 +1,5 @@
+module Prob075 where
+
 import Data.List
 import Control.Monad
 
@@ -28,7 +30,8 @@ uniqueSums = map head
            . map (\(a, b, c) -> a + b + c) 
 
 
-result = length . uniqueSums $ allTriplets 2000000
+main = print $
+       length . uniqueSums $ allTriplets 2000000
 -- 214954
 
 

@@ -13,5 +13,6 @@ printCoverage amt cs = do
     where cov = coverage amt cs
 
 
-result = length $ coverage 200 coins
+main = print $
+       length $ coverage 200 coins
 -- 73682

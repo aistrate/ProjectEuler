@@ -22,6 +22,7 @@ allTruncatable n = filter isTruncatable $
                    takeWhile (<= n) $ dropWhile (< 11) primeNumbers
 
 
-result = sum $ allTruncatable 1000000
--- [23,37,53,73,313,317,373,797,3137,3797,739397]
+main = print $
+       sum $ allTruncatable 1000000
 -- 748317
+-- [23,37,53,73,313,317,373,797,3137,3797,739397]

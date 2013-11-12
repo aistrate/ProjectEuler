@@ -13,9 +13,10 @@ main = do
        print decoded
        print $ messageSum decoded
        hClose inh
+-- 107359
+
 
 messageSum = sum . map ord
--- 107359
 
 
 process = decryptFindKey . makeList

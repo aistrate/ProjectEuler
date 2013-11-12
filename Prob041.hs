@@ -15,6 +15,7 @@ isPrime p = length (primeFactors p) == 1
 
 
 -- 987654321 and 87654321 (and their permutations) are divisible by 3
-result = head $ filter isPrime $ pandigitalsDesc 7654321
--- (538 total)
+main = print $
+       head $ filter isPrime $ pandigitalsDesc 7654321
 -- 7652413
+-- (538 total)

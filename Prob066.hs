@@ -24,7 +24,8 @@ maxD = fst . maximumBy compX . solutions
           getX = fst . snd
 
 
-result = maxD 1000
+main = print $
+       maxD 1000
 -- 661
 --      x = 16421658242965910275055840472270471049
 --      y = 638728478116949861246791167518480580

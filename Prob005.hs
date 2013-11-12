@@ -6,4 +6,7 @@ allDivisorsTo n = let ds = allDivisorsTo (n - 1)
                   in ds ++ (primeFactors n \\ ds)
 
 smallestDivisible n = product (allDivisorsTo n)
+
+main = print $
+       smallestDivisible 20
 -- 232792560

@@ -19,8 +19,10 @@ expressible = not . null . terms
 nonExpressibles = filter (not . expressible) [1..limit]
 
 
-result = sum nonExpressibles
+main = print $
+       sum nonExpressibles
 -- 4179871
+
 
 -- Checking
 counts = map (length . terms) [1..limit]

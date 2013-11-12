@@ -1,4 +1,4 @@
-module Prob069 (phi, phiFraction) where
+module Prob069 (main, phi, phiFraction) where
 
 import Data.List (elemIndex, nub, foldl1')
 import Data.Maybe (fromJust)
@@ -40,8 +40,8 @@ maxPhiFraction n = fst $ foldl1' maxPair phiPairs
                       | otherwise      = q
 
 
-result = maxPhiFraction 1000000
-
-main = print $ result
+main = print $
+       maxPhiFraction 1000000
 -- Compiled: 510510
+
 -- 5.539388020833333

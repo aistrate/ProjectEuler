@@ -19,5 +19,6 @@ isRightTriangle (p, q) = let (a2:b2:c2:[]) = sort [dist2 p orig, dist2 q orig, d
     where dist2 (px, py) (qx, qy) = (px - qx)^2 + (py - qy)^2
 
 
-main = print . length . filter isRightTriangle $ triangles 50
+main = print $
+       length . filter isRightTriangle $ triangles 50
 -- 14234 (compiled: 4 sec.)

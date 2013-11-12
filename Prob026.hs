@@ -26,9 +26,8 @@ topLengths n = reverse . sortBy comp . map pair $ [2..n]
           comp p q = compare (snd p) (snd q)
 
 
-result = head $ topLengths 1000
-
-main = print result
+main = print $
+       head $ topLengths 1000
 -- Compiled: (983,982)
 
 

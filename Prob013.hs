@@ -101,5 +101,6 @@ numbers = [
     , 20849603980134001723930671666823555245252804609722
     , 53503534226472524250874054075591789781264330331690 ]
 
-result = fromInteger . read . take 10 . show . sum $ numbers
+main = print $
+       fromInteger . read . take 10 . show . sum $ numbers
 -- 5537376230

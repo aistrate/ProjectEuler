@@ -28,5 +28,6 @@ curiousFractions = filter isCurious fractions
 -- [((1,6),(6,4)), ((1,9),(9,5)), ((2,6),(6,5)), ((4,9),(9,8))]
 
 
-result = denominator . product $ map makeRatio curiousFractions
+main = print $
+       denominator . product $ map makeRatio curiousFractions
 -- 100

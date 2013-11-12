@@ -52,8 +52,10 @@ toDigits = makeNr . map fromIntegral . concat . map expandDoubleDigits . concat
                                | otherwise = [n `div` 10, n `mod` 10]
 
 
-result = maximum . filter ((== 16) . length . show) . map toDigits $ solutionSet [1..10]
+main = print $
+       maximum . filter ((== 16) . length . show) . map toDigits $ solutionSet [1..10]
 -- 6531031914842725
+
 
 -- for [1..6], [1..8], ..., [1..16], there are 8, 12, 12, 40, 236, 564 solutions, respectively;
 -- first solution for [1..18] :

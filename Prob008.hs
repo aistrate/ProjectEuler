@@ -7,5 +7,6 @@ largestProd k ds = let groups = take (length ds - k + 1) (map (take k) $ tails d
                    in maximum $ map (product . map digitToInt) groups
 
 
-result = largestProd 5 number
+main = print $
+       largestProd 5 number
 -- 40824

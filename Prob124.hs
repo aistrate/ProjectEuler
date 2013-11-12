@@ -1,6 +1,6 @@
 import Data.List (group, sortBy)
 import Timer
-import Prob003
+import Prob003 (primeFactors)
 
 
 factors :: Int -> [Int]
@@ -14,6 +14,8 @@ sortByRadical = sortBy compRads . map (\n -> (n, radical n))
                                      in if c == EQ then compare n1 n2 else c
 
 
-main = printTime . print $ (sortByRadical [1..100000]) !! (10000 - 1)
+main = printTime $
+       print $
+       (sortByRadical [1..100000]) !! (10000 - 1)
 -- (21417,1947)
 -- Time: 9.031250 sec.

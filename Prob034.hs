@@ -12,6 +12,7 @@ curiousNumbers n = filter isCuriousNumber [10..n]
 
 
 -- 9999999 has only 7 nines; 7 * 9! = 7 * 362880 = 2540160 << 9999999
-result = sum $ curiousNumbers 2600000
--- [145,40585]
+main = print $
+       sum $ curiousNumbers 2600000
 -- 40730
+-- [145,40585]

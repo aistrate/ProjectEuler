@@ -63,7 +63,8 @@ disjointSubsets set = let combinationsTo k xs = concat [ combinations i xs | i <
                       in concatMap subsetPairs . combinationsTo (length set - 1) $ set
 
 
-main = putStrLn . concat . map show $ optimals ! 7
+main = putStrLn $
+       concat . map show $ optimals ! 7
 -- Compiled (100 sec.):
 -- 20313839404245
 

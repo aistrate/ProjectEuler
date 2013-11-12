@@ -23,6 +23,7 @@ toFloat :: (Int, Int) -> Double
 toFloat (a, b) = fromIntegral a / fromIntegral b
 
 
-result = fst $ maxReducedProperFraction (3, 7) [3..1000000]
+main = print $
+       fst $ maxReducedProperFraction (3, 7) [3..1000000]
 -- 428570
 -- (428570,999997)

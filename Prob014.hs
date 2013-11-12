@@ -23,9 +23,9 @@ longestChain n = foldl' maxP (1, 1) (take n chainLengths)
                                 | otherwise     = a
 
 
-result = longestChain (1000000 - 1)
+main = print $
+       longestChain (1000000 - 1)
 -- (837799,525)
 
-main = print result
 
 -- filter (\p -> 500 <= snd p) (take 1000000 chainLengths)

@@ -1,4 +1,5 @@
 import Prob003 (primeNumbers)
 
-result = last (take 10001 primeNumbers)
+main = print $
+       last (take 10001 primeNumbers)
 -- 104743

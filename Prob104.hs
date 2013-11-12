@@ -15,8 +15,10 @@ isDoublePandigital n = (isPandigital $ lastNineDigits n) &&
                        (isPandigital $ firstNineDigits n)
 
 
-main = printTime . print . fst . head . filter (isDoublePandigital . snd)
-       $ zip [1..] fibonacci
+main = printTime $
+       print $
+       fst . head . filter (isDoublePandigital . snd) $
+       zip [1..] fibonacci
 -- 329468
 -- Time: 4.656250 sec.
 -- (compiled)

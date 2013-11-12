@@ -39,6 +39,7 @@ longestSeq = head . reverse $ sortBy comp primeSequences
     ,1601])
 -}
 
-result = a * b
+main = print $
+       a * b
          where (a, b, _, _) = longestSeq
 -- -59231
