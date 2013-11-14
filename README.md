@@ -7,9 +7,9 @@ Project Euler
 
 There are around [450 problems][2] (Nov 2013), in roughly increasing order of difficulty: problems 1 to 10 can be solved in minutes, while problems 100 and beyond could take hours. The main challenge, especially from problem 50 on, is to come up with solutions that execute in a reasonable amount of time (usually seconds, but sometimes up to a minute).
 
-I started working on the problems after reading part of [Real World Haskell][3], in January 2010. At that point, I needed something to practice on--to solidify my knowledge of Haskell, to learn to think the functional way. I remembered that I had loved solving logical/mathematical puzzles in secondary and high school, so this was a good fit. After a while, it became quite addictive.
+This repository contains my solutions to some of the problems, in Haskell. I solved 107 out of the first 125 in the series (which puts me in the 98th percentile of users by number of problems solved).
 
-I solved 107 of the first 125 problems, which puts me in the 98th percentile of users, by number of problems solved.
+I started working on the problems after reading part of [Real World Haskell][3], in January 2010. At that point, I needed something to practice on, to solidify my knowledge of Haskell, to learn to think the functional way. I remembered how much I loved solving logical/mathematical puzzles in secondary and high school, so I thought this would fit the bill. After a while, it became quite addictive, like a video game.
 
 Some of the more interesting problems:
 
