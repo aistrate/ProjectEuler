@@ -1,7 +1,6 @@
 import Data.List
 import qualified Data.Map as M
 import Prob003 (primeNumbers, primeFactors)
-import Prob012 (combinations)
 import Prob035 (makeNr)
 import Prob038 (digitList)
 
