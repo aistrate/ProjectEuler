@@ -5,11 +5,11 @@ Project Euler
 
 > *... a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.*
 
-There are around [450 problems][2] (Nov 2013), in roughly increasing order of difficulty: problems 1 to 10 can be solved in minutes, while problems 100 and beyond could take hours. The main challenge, especially from problem 50 on, is to come up with solutions that execute in a reasonable amount of time (usually seconds, but sometimes up to a minute).
+There are around [450 problems][2] in the series (Nov 2013), in roughly increasing order of difficulty: problems 1 to 10 can be solved in minutes, while problems 100 and beyond could take hours. The main challenge, especially from problem 50 on, is to come up with solutions that execute in a reasonable amount of time (usually seconds, but sometimes up to a minute).
 
-This repository contains my solutions to some of the problems, in Haskell. I solved **107 problems** out of the first 125 in the series (which puts me in the 98th percentile of users by number of problems solved).
+This repository contains my solutions to some of the problems, in Haskell. I solved **107 problems** out of the first 125 in the series (which puts me in the 98th percentile of users, by number of problems solved).
 
-I started working on the problems after reading part of [Real World Haskell][3], in January 2010. At that point, I needed something to practice on, to solidify my knowledge of Haskell, to learn to think the functional way. I remembered how much I loved solving logical/mathematical puzzles in secondary and high school, so I thought this would fit the bill. After a while, it became quite addictive, like a video game.
+I started working on the problems after reading part of [Real World Haskell][3], in January 2010. At that point, I needed something to practice on, to solidify my knowledge of Haskell, to learn to think the functional way. I remembered how much I loved solving logical/mathematical puzzles in secondary and high school, so I thought this would fit the bill. After a while, it became quite addictive, almost like a video game.
 
 Some of the more interesting problems:
 
