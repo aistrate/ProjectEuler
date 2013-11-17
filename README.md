@@ -15,12 +15,10 @@ Some of the more interesting problems:
 
 - [Problem 54][11]: for 1000 pairs of poker hands, find the winning hand in every pair ([solution][12])
 - [Problem 80][5]: calculate irrational square roots up to 100 decimals ([solution][6]); builds on [problem 64][7] ([solution][8])
-- [Problem 89][13]: rewrite 1000 roman numerals in minimal form ([solution][14])
+- [Problem 89][13]: rewrite 1000 Roman numerals in minimal form ([solution][14])
 - [Problem 96][9]: solve 50 Sudoku grids ([solution][10])
 
-The series contains a lot of [number theory][100] problems, involving prime numbers and [factorization][101] into primes. [Problem 3][15] is a simple factorization, but its code is used by 21 other problems, so eventually I had to optimize its performance ([solution][16]).
-
-There are also a fair number of [combinatorics][102] problems. [Problem 12][17] contains code for generating [combinations][103], used in 6 other problems ([solution][18]).
+The series contains a lot of problems from [number theory][100] (prime numbers, [factorization][101] into primes), and [combinatorics][102].
 
 
   [1]: http://projecteuler.net/
@@ -31,7 +29,6 @@ There are also a fair number of [combinatorics][102] problems. [Problem 12][17] 
   [100]: http://en.wikipedia.org/wiki/Number_Theory
   [101]: http://en.wikipedia.org/wiki/Integer_factorization
   [102]: http://en.wikipedia.org/wiki/Combinatorics
-  [103]: http://en.wikipedia.org/wiki/Combinations
   
   [5]: http://projecteuler.net/problem=80
   [6]: https://github.com/aistrate/ProjectEuler/blob/master/Solutions/Prob080.hs
@@ -47,9 +44,3 @@ There are also a fair number of [combinatorics][102] problems. [Problem 12][17] 
   
   [13]: http://projecteuler.net/problem=89
   [14]: https://github.com/aistrate/ProjectEuler/blob/master/Solutions/Prob089.hs
-  
-  [15]: http://projecteuler.net/problem=3
-  [16]: https://github.com/aistrate/ProjectEuler/blob/master/Solutions/Prob003.hs
-  
-  [17]: http://projecteuler.net/problem=12
-  [18]: https://github.com/aistrate/ProjectEuler/blob/master/Solutions/Prob012.hs
