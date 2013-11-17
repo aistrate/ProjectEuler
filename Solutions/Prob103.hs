@@ -1,6 +1,6 @@
 import Data.List (sort, group, (\\))
 import Data.Array (Array, listArray, (!))
-import Prob012 (allCombinations, combinations, makeUnique)
+import Prob012 (allCombinations, combinations)
 
 
 optimals :: Array Int [Int]
@@ -65,7 +65,7 @@ disjointSubsets set = let combinationsTo k xs = concat [ combinations i xs | i <
 
 main = putStrLn $
        concat . map show $ optimals ! 7
--- Compiled (100 sec.):
+-- Compiled (23 sec.):
 -- 20313839404245
 
 

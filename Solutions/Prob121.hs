@@ -22,5 +22,3 @@ main = printTime $
        print $
        maxPrize 15
 -- 2269
--- Time: 16.953125 sec.
--- (compiled)

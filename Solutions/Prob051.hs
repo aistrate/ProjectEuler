@@ -48,5 +48,6 @@ allFamilies ns = sortBy compFamilies families
 
 
 main = print $
-       allFamilies primesList
+       minimum . concat $ allFamilies primesList
+-- Compiled: 121313
 -- [[121313,222323,323333,424343,525353,626363,828383,929393]]
